@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export class UseState extends Component {
     constructor(props) {
@@ -15,10 +15,13 @@ export class UseState extends Component {
     }
     
   render() {
+
     return (
       <div>
+
         <h3>increament count using class component</h3>
         <button onClick={this.increamentHandler} title='Click to increase the value'> Count {this.state.count}</button>
+      
       </div>
     )
   }
