@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
-export class UseEffect extends Component {
+class UseEffect extends Component {
 
     constructor(props) {
       super(props)
@@ -18,11 +18,18 @@ export class UseEffect extends Component {
         document.title = `Clicked ${this.state.count} times`
     }
     
+    handleClick = () => {
+      this.setState({count: this.state.count + 1})
+    }
+    
   render() {
+
     return (
       <div>
+
         <h3>UseEffect after Render</h3>
-        <button onClick={() => this.setState({count: this.state.count + 1})} title='Click and check it on page title'>Click {this.state.count} times</button>
+        <button onClick={this.handleClick} title='Click and check it on page title'>Click {this.state.count} times</button>
+        
       </div>
     )
   }
