@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function UseEffectFunction() {
     const [count, setCount] = useState(0)
@@ -7,10 +7,16 @@ function UseEffectFunction() {
         document.title = `You Clicked ${count} times`
     })
 
+    const handleClick = () => {
+      setCount(count + 1)
+    }
+
   return (
     <div>
+
         <h3>UseEffect with Function</h3>
-      <button onClick={() => setCount(count + 1)} title='Click and chect it on page title'>click {count} times</button>
+      <button onClick={handleClick} title='Click and chect it on page title'>click {count} times</button>
+    
     </div>
   )
 }
