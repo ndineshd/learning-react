@@ -1,31 +1,23 @@
-import React from 'react'
-import UseState from './components/UseState'
-import HookCounter from './components/HookCounter'
-import HookPreState from './components/HookPreState'
-import ObjectUseState from './components/ObjectUseState'
-import ArrayUseState from './components/ArrayUseState'
-import UseEffect from './components/UseEffect'
-import UseEffectFunction from './components/UseEffectFunction'
-import UseEffectMouse from './components/UseEffectMouse'
-import FunctionMouse from './components/FunctionMouse'
-import MouseContainer from './components/MouseContainer'
+import {UseState, HookCounter, HookPreState, ObjectUseState, ArrayUseState, UseEffect, UseEffectFunction, UseEffectMouse, FunctionMouse, MouseContainer, IntervalHookCounter} from './components/components'
 
-function ReactHooks() {
+export function ReactHooks() {
+  
   return (
     <div>
-        <h1>useState Hook</h1>
+      <h1>useState Hook</h1>
 
-     <UseState />
-     <HookCounter />
-     <HookPreState />
-     <ObjectUseState />
-     <ArrayUseState />
-     <h1>UseEffect Hook</h1>
-     <UseEffect />
-     <UseEffectFunction />
-     <UseEffectMouse />
-     <FunctionMouse />
-     <MouseContainer />
+        <UseState />
+        <HookCounter />
+        <HookPreState />
+        <ObjectUseState />
+        <ArrayUseState />
+      <h1>UseEffect Hook</h1>
+        <UseEffect />
+        <UseEffectFunction />
+        <UseEffectMouse />
+        <FunctionMouse />
+        <MouseContainer />
+        <IntervalHookCounter />
 
     </div>
   )
