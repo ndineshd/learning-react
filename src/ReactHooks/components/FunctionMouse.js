@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function FunctionMouse() {
 
@@ -20,7 +20,7 @@ function FunctionMouse() {
 
   return (
     <div>
-        <h3>UseEffect Mouse using function</h3>
+      <h3>UseEffect Mouse using function</h3>
       Hooks X - {x} Y - {y}
     </div>
   )
