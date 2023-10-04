@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 class UseEffectMouse extends Component {
 
@@ -20,10 +20,13 @@ class UseEffectMouse extends Component {
     }
     
   render() {
+    
     return (
       <div>
+
         <h3>UseEffect Mouse using class </h3>
         X - {this.state.x} Y - {this.state.y}
+      
       </div>
     )
   }
